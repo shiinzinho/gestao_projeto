@@ -44,8 +44,11 @@ class UpdateGestaoFormRequest extends FormRequest
             'titulo.min' => 'Título deve conter no mínimo 5 caracteres',
             'decricao.max' => 'Descrição deve conter apenas 200 caracteres',
             'decricao.min' => 'Descrição deve conter no mínimo 5 caracteres',
-            'titulo.max' => 'Título deve conter apenas 20 caracteres',
-            'titulo.min' => 'Título deve conter no mínimo 5 caracteres'
+            'data_inicio.date' => 'Apenas datas',
+            'data_termino.date' => 'Apenas datas',
+            'valor_projeto.decimal' => 'Valor do projeto apenas em números decimais',
+            'status.max' => 'Título deve conter apenas 20 caracteres',
+            'status.min' => 'Título deve conter no mínimo 5 caracteres'
         ];
     }
 }

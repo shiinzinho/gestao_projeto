@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('descricao', 200)->nullable(false);
             $table->date('data_inicio')->nullable(false);
             $table->date('data_termino')->nullable(false);
-            $table->decimal('valor_projeto', 80)->nullable(false);
-            $table->string('status', 80)->nullable(false);
+            $table->decimal('valor_projeto')->nullable(false);
+            $table->string('status', 20)->nullable(false);
             $table->timestamps();
         });
     }

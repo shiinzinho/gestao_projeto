@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('management', [GestaoController::class, 'gestao']);
 
-Route::post('management/update', [GestaoController::class, 'gestaoAtualizar']);
+Route::post('management/update', [GestaoController::class, 'gestaoUpdate']);
 
 Route::delete('management/delete/{id}', [GestaoController::class, 'gestaoDelete']);
 

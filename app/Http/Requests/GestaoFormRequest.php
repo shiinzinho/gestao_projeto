@@ -48,11 +48,14 @@ class GestaoFormRequest extends FormRequest
             'decricao.max' => 'Descrição deve conter apenas 200 caracteres',
             'decricao.min' => 'Descrição deve conter no mínimo 5 caracteres',
             'data_inicio.required' => 'Data inicial obrigatória',
+            'data_inicio.date' => 'Apenas datas',
             'data_termino.required' => 'Data de finalização obrigatória',
+            'data_termino.date' => 'Apenas datas',
             'valor_projeto.required' => 'Valor do projeto obrigatório',
+            'valor_projeto.decimal' => 'Valor do projeto apenas em números decimais',
             'status.required' => 'Status do projeto obrigatório',
-            'titulo.max' => 'Título deve conter apenas 20 caracteres',
-            'titulo.min' => 'Título deve conter no mínimo 5 caracteres'
+            'status.max' => 'Título deve conter apenas 20 caracteres',
+            'status.min' => 'Título deve conter no mínimo 5 caracteres'
         ];
     }
 }
