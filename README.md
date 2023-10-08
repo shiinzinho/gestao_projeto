@@ -22,7 +22,7 @@ Certifique-se de ter os seguintes requisitos atendidos antes de começar a traba
 ```
 2. Acesse o diretório do projeto:
 ```
-cd exercicios-api
+cd gestao_projeto
 ```
 3. Inicializando o Repositório
 ```
@@ -38,7 +38,7 @@ code .
 ```
 ## Insomnia
 
-//aqui
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Projeto%20Gest%C3%A3o&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fshiinzinho%2Fgestao_projeto%2Fmain%2FInsomnia.json)
 
 ## Licença
 
