@@ -24,10 +24,11 @@ class GestaoFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-           'titulo'=>'required|max:80|min:5',
+           'titulo'=>'required|max:80|min:5|unique:gestaos,titulo',
+//         'email'=>'required|max:120|email:rfc,dns|unique:clientes,email',
            'descricao'=>'required|max:200|min:5',
            'data_inicio'=>'required|date',
-           'data_termino'=>'required|date',
+           'data_termino'=>'date',
            'valor_projeto'=>'required|decimal:2',
            'status'=>'required|max:20|min:5'
 
@@ -44,12 +45,13 @@ class GestaoFormRequest extends FormRequest
             'titulo.required' => 'Título obrigatório',
             'titulo.max' => 'Título deve conter apenas 80 caracteres',
             'titulo.min' => 'Título deve conter no mínimo 5 caracteres',
+            'titulo.unique' => 'Título ja cadastrado no sistema',
+//           'email.email' => 'Formato de email inválido',
             'descricao.required' => 'Descrição obrigatória',
             'decricao.max' => 'Descrição deve conter apenas 200 caracteres',
             'decricao.min' => 'Descrição deve conter no mínimo 5 caracteres',
             'data_inicio.required' => 'Data inicial obrigatória',
             'data_inicio.date' => 'Apenas datas',
-            'data_termino.required' => 'Data de finalização obrigatória',
             'data_termino.date' => 'Apenas datas',
             'valor_projeto.required' => 'Valor do projeto obrigatório',
             'valor_projeto.decimal' => 'Valor do projeto apenas em números decimais',
