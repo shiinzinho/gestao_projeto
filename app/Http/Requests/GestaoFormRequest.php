@@ -25,7 +25,7 @@ class GestaoFormRequest extends FormRequest
     {
         return [
            'titulo'=>'required|max:80|min:5|unique:gestaos,titulo',
-//         'email'=>'required|max:120|email:rfc,dns|unique:clientes,email',
+//         'email'=>'required|max:120|email:rfc,dns|unique:gestaos,email',
            'descricao'=>'required|max:200|min:5',
            'data_inicio'=>'required|date',
            'data_termino'=>'date',
